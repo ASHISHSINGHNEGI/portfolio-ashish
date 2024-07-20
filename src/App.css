@@ -2,9 +2,14 @@ body {
   width: 100vw;
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  color: black;
+}
+a {
+  color: black;
 }
 .navbar {
-  background-color: rgb(172, 182, 192);
   display: flex;
   box-sizing: border-box;
   width: 98vw;
@@ -14,31 +19,39 @@ body {
 .logo {
   width: 30%;
   text-align: left;
-  background-color: cadetblue;
+}
+.logo p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
 }
 
 .links {
   width: 40%;
-  text-align: center;
-  background-color: rebeccapurple;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .socialLinks {
   width: 30%;
-  background-color: cadetblue;
-  text-align: right;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* background-color: #333 */
 }
 
 li {
-  float: left;
+  /* float: left; */
 }
 
 a {
