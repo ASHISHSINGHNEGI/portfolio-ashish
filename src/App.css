@@ -1,0 +1,53 @@
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  background-color: rgb(172, 182, 192);
+  display: flex;
+  box-sizing: border-box;
+  width: 98vw;
+  margin: 0 1% 0 1%;
+}
+
+.logo {
+  width: 30%;
+  text-align: left;
+  background-color: cadetblue;
+}
+
+.links {
+  width: 40%;
+  text-align: center;
+  background-color: rebeccapurple;
+}
+
+.socialLinks {
+  width: 30%;
+  background-color: cadetblue;
+  text-align: right;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: #333 */
+}
+
+li {
+  float: left;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  padding: 8px;
+  /* color: white; */
+}
+
+a:hover {
+  /* background-color: #111; */
+}
