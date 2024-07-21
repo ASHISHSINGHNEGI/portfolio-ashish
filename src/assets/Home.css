@@ -1,0 +1,21 @@
+.homeMain {
+  background-color: #e2fcef;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+}
+.name p {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.role {
+  color: #5c164e;
+  font-size: 32px;
+  font-weight: 900;
+}

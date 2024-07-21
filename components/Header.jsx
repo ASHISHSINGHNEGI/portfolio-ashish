@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../src/App.css";
 
 export default function Header() {
@@ -6,31 +6,72 @@ export default function Header() {
     <>
       <div className="navbar">
         <div className="logo">
-          <p>Ashish Singh Negi</p>
+          <p>
+            <span>Ashish</span> Singh Negi
+          </p>
         </div>
         <div className="links">
           <div>
-            <NavLink to={"/"}>Home</NavLink>
+            <NavLink
+              to={"/"}
+              className={({ isActive }) =>
+                `${isActive ? "activelink" : "passiveLink"}`
+              }
+            >
+              Home
+            </NavLink>
           </div>
           <div>
-            <NavLink to={"/about"}>About</NavLink>
+            <NavLink
+              to={"/about"}
+              className={({ isActive }) =>
+                `${isActive ? "activelink" : "passiveLink"}`
+              }
+            >
+              About
+            </NavLink>
           </div>
           <div>
-            <NavLink to={"/contact"}>Contact</NavLink>
+            <NavLink
+              to={"/contact"}
+              className={({ isActive }) =>
+                `${isActive ? "activelink" : "passiveLink"}`
+              }
+            >
+              Contact
+            </NavLink>
           </div>
           <div>
-            <NavLink to={"/projects"}>Projects</NavLink>
+            <NavLink
+              to={"/projects"}
+              className={({ isActive }) =>
+                `${isActive ? "activelink" : "passiveLink"}`
+              }
+            >
+              Projects
+            </NavLink>
           </div>
           <div>
-            <NavLink to={"/skills"}>Skills</NavLink>
+            <NavLink
+              to={"/skills"}
+              className={({ isActive }) =>
+                `${isActive ? "activelink" : "passiveLink"}`
+              }
+            >
+              Skills
+            </NavLink>
           </div>
         </div>
         <div className="socialLinks">
           <div>
-            <a href="linkedin">linkedin</a>
+            <Link to={"linkedin"}>
+              <img src="linkedin-svgrepo-com.svg" alt="" />
+            </Link>
           </div>
           <div>
-            <a href="github">Github</a>
+            <Link to={"github"}>
+              <img src="github-142-svgrepo-com.svg" alt="" />
+            </Link>
           </div>
         </div>
       </div>
