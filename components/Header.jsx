@@ -8,6 +8,10 @@ export default function Header() {
     setMenu(!menuOn);
   };
 
+  const closeMenu = () => {
+    setMenu(false);
+  };
+
   return (
     <>
       <div className="navbar">
@@ -36,49 +40,48 @@ export default function Header() {
             >
               About
             </NavLink>
-
-            <div>
-              <NavLink
-                to={"/contact"}
-                className={({ isActive }) =>
-                  `${isActive ? "activelink" : "passiveLink"}`
-                }
-              >
-                Contact
-              </NavLink>
-            </div>
-            <div>
-              <NavLink
-                to={"/projects"}
-                className={({ isActive }) =>
-                  `${isActive ? "activelink" : "passiveLink"}`
-                }
-              >
-                Projects
-              </NavLink>
-            </div>
-            <div>
-              <NavLink
-                to={"/skills"}
-                className={({ isActive }) =>
-                  `${isActive ? "activelink" : "passiveLink"}`
-                }
-              >
-                Skills
-              </NavLink>
-            </div>
           </div>
-          <div className="socialLinks">
-            <div>
-              <Link to={"linkedin"}>
-                <img src="linkedin-svgrepo-com.svg" alt="" />
-              </Link>
-            </div>
-            <div>
-              <Link to={"github"}>
-                <img src="github-142-svgrepo-com.svg" alt="" />
-              </Link>
-            </div>
+          <div>
+            <NavLink
+              to={"/contact"}
+              className={({ isActive }) =>
+                `${isActive ? "activelink" : "passiveLink"}`
+              }
+            >
+              Contact
+            </NavLink>
+          </div>
+          <div>
+            <NavLink
+              to={"/projects"}
+              className={({ isActive }) =>
+                `${isActive ? "activelink" : "passiveLink"}`
+              }
+            >
+              Projects
+            </NavLink>
+          </div>
+          <div>
+            <NavLink
+              to={"/skills"}
+              className={({ isActive }) =>
+                `${isActive ? "activelink" : "passiveLink"}`
+              }
+            >
+              Skills
+            </NavLink>
+          </div>
+        </div>
+        <div className="socialLinks">
+          <div>
+            <Link to={"linkedin"}>
+              <img src="linkedin-svgrepo-com.svg" alt="" />
+            </Link>
+          </div>
+          <div>
+            <Link to={"github"}>
+              <img src="github-142-svgrepo-com.svg" alt="" />
+            </Link>
           </div>
         </div>
         <div className="menuButton" onClick={changeMenu}>
@@ -88,70 +91,76 @@ export default function Header() {
           />
         </div>
       </div>
-      <div className="mobileNavbar">
-        <div className={`links ${menuOn ? "menu-active" : ""}`}>
+      <div
+        className={`mobileNavbar ${
+          menuOn ? "mobileNavbar-active" : "mobileNavbar-passive"
+        }`}
+      >
+        <div>
+          <NavLink
+            to={"/"}
+            className={({ isActive }) =>
+              `${isActive ? "activelink" : "passiveLink"}`
+            }
+            onClick={closeMenu}
+          >
+            Home
+          </NavLink>
+        </div>
+        <div>
+          <NavLink
+            to={"/about"}
+            className={({ isActive }) =>
+              `${isActive ? "activelink" : "passiveLink"}`
+            }
+            onClick={closeMenu}
+          >
+            About
+          </NavLink>
+        </div>
+        <div>
+          <NavLink
+            to={"/contact"}
+            className={({ isActive }) =>
+              `${isActive ? "activelink" : "passiveLink"}`
+            }
+            onClick={closeMenu}
+          >
+            Contact
+          </NavLink>
+        </div>
+        <div>
+          <NavLink
+            to={"/projects"}
+            className={({ isActive }) =>
+              `${isActive ? "activelink" : "passiveLink"}`
+            }
+            onClick={closeMenu}
+          >
+            Projects
+          </NavLink>
+        </div>
+        <div>
+          <NavLink
+            to={"/skills"}
+            className={({ isActive }) =>
+              `${isActive ? "activelink" : "passiveLink"}`
+            }
+            onClick={closeMenu}
+          >
+            Skills
+          </NavLink>
+        </div>
+        <div className="socialLinks">
           <div>
-            <NavLink
-              to={"/"}
-              className={({ isActive }) =>
-                `${isActive ? "activelink" : "passiveLink"}`
-              }
-            >
-              Home
-            </NavLink>
+            <Link to={"linkedin"}>
+              <img src="linkedin-svgrepo-com.svg" alt="" />
+            </Link>
           </div>
           <div>
-            <NavLink
-              to={"/about"}
-              className={({ isActive }) =>
-                `${isActive ? "activelink" : "passiveLink"}`
-              }
-            >
-              About
-            </NavLink>
-
-            <div>
-              <NavLink
-                to={"/contact"}
-                className={({ isActive }) =>
-                  `${isActive ? "activelink" : "passiveLink"}`
-                }
-              >
-                Contact
-              </NavLink>
-            </div>
-            <div>
-              <NavLink
-                to={"/projects"}
-                className={({ isActive }) =>
-                  `${isActive ? "activelink" : "passiveLink"}`
-                }
-              >
-                Projects
-              </NavLink>
-            </div>
-            <div>
-              <NavLink
-                to={"/skills"}
-                className={({ isActive }) =>
-                  `${isActive ? "activelink" : "passiveLink"}`
-                }
-              >
-                Skills
-              </NavLink>
-            </div>
-          </div>
-          <div className="socialLinks">
-            <div>
-              <Link to={"linkedin"}>
-                <img src="linkedin-svgrepo-com.svg" alt="" />
-              </Link>
-            </div>
-            <div>
-              <Link to={"github"}>
-                <img src="github-142-svgrepo-com.svg" alt="" />
-              </Link>
-            </div>
+            <Link to={"github"}>
+              <img src="github-142-svgrepo-com.svg" alt="" />
+            </Link>
           </div>
         </div>
       </div>

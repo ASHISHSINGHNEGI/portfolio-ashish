@@ -78,6 +78,10 @@ a {
   display: none;
 }
 
+.mobileNavbar {
+  display: none;
+}
+
 @media (max-width: 767px) {
   body {
     box-sizing: border-box;
@@ -104,5 +108,19 @@ a {
   }
   .menuButton img {
     width: 100%;
+  }
+
+  .mobileNavbar {
+    display: block;
+  }
+
+  .mobileNavbar-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobileNavbar-passive {
+    display: none;
   }
 }
