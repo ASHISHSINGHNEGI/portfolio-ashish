@@ -13,11 +13,16 @@ export default function Home() {
             <p>Software Engineer</p>
           </div>
           <div className="description">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p>
+              Dynamic and versatile Full Stack Developer with a strong
+              foundation in the MERN stack.
+            </p>
           </div>
           <div className="buttons">
-            <NavLink to={"/contact"}>Contact Me</NavLink>
-            <span>resume download</span>
+            <NavLink className="contactme" to={"/contact"}>
+              Contact Me
+            </NavLink>
+            <NavLink className="resume">Resume</NavLink>
           </div>
         </div>
       </div>
