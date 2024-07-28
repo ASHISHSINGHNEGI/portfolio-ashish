@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .homeMain {
   display: flex;
   justify-content: center;
@@ -11,14 +5,15 @@
   width: 96vw;
   height: 100vh;
   background-color: #f5f5f5;
+  margin-top: 10px;
 }
 
 .container {
-  text-align: center;
-  padding: 20px;
-  background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .name {
   width: 100%;
@@ -43,6 +38,10 @@
   font-size: 1rem;
   color: #555;
 }
+.description p {
+  text-align: center;
+}
+
 .buttons {
   display: flex;
   justify-content: center;
@@ -70,13 +69,8 @@
 }
 
 @media (max-width: 767px) {
-  .buttons {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
   .contactme,
   .resume {
-    margin-top: 0;
+    padding: 10px 15px;
   }
 }

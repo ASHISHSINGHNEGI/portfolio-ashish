@@ -63,15 +63,12 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
-  /* background-color: #333 */
 }
 
 a {
   text-decoration: none;
   display: block;
   padding: 8px;
-  /* color: white; */
 }
 
 .menuButton {
@@ -86,13 +83,14 @@ a {
   body {
     box-sizing: border-box;
     font-size: 10px;
+  
   }
   .navbar {
     align-items: center;
-    width: 100vw;
   }
   .logo {
-    width: 90vw;
+    width: 90vw;   
+
   }
 
   .links {
@@ -108,10 +106,12 @@ a {
   }
   .menuButton img {
     width: 100%;
+
   }
 
   .mobileNavbar {
     display: block;
+
   }
 
   .mobileNavbar-active {
