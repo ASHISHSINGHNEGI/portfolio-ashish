@@ -1,0 +1,77 @@
+.homeMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96vw;
+  height: 100vh;
+  background-color: #f5f5f5;
+  margin-top: 10px;
+}
+
+.container {
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  /* border-radius: 10px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0c311c;
+}
+.name {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.name p {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+}
+
+.role {
+  color: #5c164e;
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.description {
+  width: 70%;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #555;
+}
+.description p {
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.contactme,
+.resume {
+  display: inline-block;
+  width: 150px;
+  background-color: #5c164e;
+  padding: 15px 45px;
+  border-radius: 5px;
+  color: #e2fcef;
+  margin-right: 10px;
+  text-align: center;
+  text-decoration: none; /* Removing underline */
+  transition: background-color 0.3s ease;
+}
+
+.contactme:hover,
+.resume:hover {
+  background-color: #3b0c30; /* Darker shade on hover */
+}
+
+@media (max-width: 767px) {
+  .contactme,
+  .resume {
+    padding: 10px 15px;
+  }
+}

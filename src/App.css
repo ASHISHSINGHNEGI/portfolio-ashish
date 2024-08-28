@@ -1,42 +1,119 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  margin: 0 2vw 0 2vw;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  background-color: #e2fcef;
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  box-sizing: border-box;
+  height: 3rem;
+  line-height: 3rem;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  width: 30vw;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.logo p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  white-space: nowrap;
+  color: #402039;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.links {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.activelink {
+  color: #9b287b;
+}
+.passiveLink {
+  color: gray;
+}
+
+.passiveLink:hover {
+  color: #9b287b;
+}
+
+.socialLinks {
+  width: 30%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.socialLinks img {
+  width: 40px;
+  height: 30px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  padding: 8px;
+}
+
+.menuButton {
+  display: none;
+}
+
+.mobileNavbar {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  body {
+    box-sizing: border-box;
+    font-size: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  .navbar {
+    align-items: center;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .logo {
+    width: 90vw;
   }
-}
 
-.card {
-  padding: 2em;
-}
+  .links {
+    display: none;
+  }
+  .socialLinks {
+    display: none;
+  }
+  .menuButton {
+    display: block;
+    width: 10vw;
+    float: right;
+    /* height: 3rem;
+    line-height: 3rem; */
+  }
+  .menuButton img {
+    width: 100%;
+  }
 
-.read-the-docs {
-  color: #888;
+  .mobileNavbar {
+    display: block;
+  }
+
+  .mobileNavbar-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobileNavbar-passive {
+    display: none;
+  }
 }
