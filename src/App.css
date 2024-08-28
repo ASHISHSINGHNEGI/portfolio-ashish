@@ -1,17 +1,16 @@
 body {
   margin: 0 2vw 0 2vw;
-  padding: 0;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   background-color: #e2fcef;
   color: black;
 }
-a {
-  color: black;
-}
+
 .navbar {
   display: flex;
   box-sizing: border-box;
+  height: 3rem;
+  line-height: 3rem;
 }
 
 .logo {
@@ -23,10 +22,7 @@ a {
   font-style: normal;
   font-size: 20px;
   white-space: nowrap;
-}
-.logo p span {
-  background-color: #5c164e;
-  color: #e2fcef;
+  color: #402039;
 }
 
 .links {
@@ -50,8 +46,7 @@ a {
 .socialLinks {
   width: 30%;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  flex-direction: row-reverse;
 }
 
 .socialLinks img {
@@ -83,14 +78,12 @@ a {
   body {
     box-sizing: border-box;
     font-size: 10px;
-  
   }
   .navbar {
     align-items: center;
   }
   .logo {
-    width: 90vw;   
-
+    width: 90vw;
   }
 
   .links {
@@ -103,15 +96,15 @@ a {
     display: block;
     width: 10vw;
     float: right;
+    /* height: 3rem;
+    line-height: 3rem; */
   }
   .menuButton img {
     width: 100%;
-
   }
 
   .mobileNavbar {
     display: block;
-
   }
 
   .mobileNavbar-active {
